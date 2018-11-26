@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans');
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #fond {
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    #world {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        opacity: 1;
+    }
+
+    #start {
+        opacity: 1;
+    }
+
+    .titre p {
+        position: absolute;
+        color: white;
+        z-index: 10000;
+        font-size: 3em;
+        width: 100%;
+        text-align: center;
+        top: 15%;
+        font-family: 'Black Han Sans', sans-serif;
+        opacity: 0.5;
+        cursor: pointer;
+    }
+
+    .play {
+        position: absolute;
+        z-index: 100;
+        text-align: center;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .play img {
+        width: 10%;
+        animation: animButton 1s infinite alternate;
+    }
+
+    @keyframes animButton {
+        0% {
+            width: 10%;
+        }
+
+        100% {
+            width: 10.5%;
+        }
+    }
+
+    .audio {
+        width: 100%;
+    }
+
+    #sound {
+        position: absolute;
+        z-index: 200;
+    }
+
+    #bg {
+        background: #42C0EC;
+    }
+
+    @keyframes bgColor {
+        0% {
+            background: #42C0EC ;
+        }
+
+        60% {
+            background: #181731 ;
+        }
+    }
