@@ -66,7 +66,7 @@ function handleWindowResize() {
 
 Land = function(){
     let texture = new THREE.TextureLoader();
-    let textureRoad = texture.load('https://github.com/Nadiaessou/project-webgl/tree/master/img/route.png');
+    let textureRoad = texture.load('https://nadiaessou.github.io/project-webgl/img/route.png');
 
     var materialTop = new THREE.MeshPhongMaterial( {transparent: true, map: textureRoad, });
     var materialSide = new THREE.MeshPhongMaterial({color: 0x84b346});
@@ -121,7 +121,7 @@ Moon = function(){
     var moonGeom = new THREE.CircleGeometry( 530, 80, 100 );
 
      let textureLoader = new THREE.TextureLoader();
-     let textureMoon = textureLoader.load('https://github.com/Nadiaessou/project-webgl/tree/master/img/lune.png');
+     let textureMoon = textureLoader.load('https://nadiaessou.github.io/project-webgl/img/lune.png');
      var moonMat = new THREE.MeshPhongMaterial( {transparent: true, map: textureMoon, });
     
     var moon = new THREE.Mesh(moonGeom, moonMat);
@@ -143,7 +143,7 @@ Sun = function(){
     var sunGeom = new THREE.CircleGeometry( 530, 80, 100 );
 
      let textureLoader = new THREE.TextureLoader();
-     let textureSun = textureLoader.load('https://github.com/Nadiaessou/project-webgl/tree/master/img/soleil.png');
+     let textureSun = textureLoader.load('https://nadiaessou.github.io/project-webgl/img/soleil.png');
      var sunMat = new THREE.MeshPhongMaterial( {transparent: true, map: textureSun, });
 
     
@@ -167,7 +167,7 @@ Cloud = function(){
     // Cube geometry and material
     var geom = new THREE.PlaneGeometry( 60, 90, 20 );
     let textureLoader = new THREE.TextureLoader();
-    let texture = textureLoader.load('https://github.com/Nadiaessou/project-webgl/tree/master/img/nuage.png');
+    let texture = textureLoader.load('https://nadiaessou.github.io/project-webgl/img/nuage.png');
     var mat = new THREE.MeshBasicMaterial({
         color: 0xFFFFFF,
         map: texture,
@@ -255,7 +255,7 @@ Tree = function () {
         
     // Random texture trees
     var texturesTree = [
-            'https://github.com/Nadiaessou/project-webgl/tree/master/img/tree2.png',    
+            'https://nadiaessou.github.io/project-webgl/img/tree2.png',    
     ];
 
     var randIndex = THREE.Math.randInt(0, texturesTree.length - 1);
@@ -346,7 +346,7 @@ Forest = function(){
     // Create the Body
     var geomPersonnage = new THREE.PlaneGeometry( 500, 500, 50 );
     let textureLoader = new THREE.TextureLoader();
-    let texture = textureLoader.load('https://github.com/Nadiaessou/project-webgl/tree/master/img/personnage.png');
+    let texture = textureLoader.load('https://nadiaessou.github.io/project-webgl/img/personnage.png');
     var redFurMat = new THREE.MeshBasicMaterial({map: texture,transparent: true,});
     var personnage = new THREE.Mesh(geomPersonnage, redFurMat);
     this.mesh.add(personnage);
@@ -369,7 +369,7 @@ var Car = function() {
     // Create the Body
     var geomBody = new THREE.PlaneGeometry( 500, 500, 50 );
     let textureLoader = new THREE.TextureLoader();
-    let texture = textureLoader.load('https://github.com/Nadiaessou/project-webgl/tree/master/img/car.png');
+    let texture = textureLoader.load('https://nadiaessou.github.io/project-webgl/img/car.png');
     var redFurMat = new THREE.MeshBasicMaterial({map: texture,transparent: true,});
     var body = new THREE.Mesh(geomBody, redFurMat);
     body.castShadow = true;
@@ -393,7 +393,7 @@ var Roue = function(){
     // Create roue droite
     var geomRoue = new THREE.CircleGeometry( 40, 80 );
     let textureRoueLoader = new THREE.TextureLoader();
-    let textureRoue = textureRoueLoader.load('https://github.com/Nadiaessou/project-webgl/tree/master/img/roue.png');
+    let textureRoue = textureRoueLoader.load('https://nadiaessou.github.io/project-webgl/img/roue.png');
     var matRoue = new THREE.MeshPhongMaterial({
         map: textureRoue,
         transparent: true,
@@ -419,9 +419,9 @@ var Maison = function(){
 
     // Random texture maison
     var texturesMaison = [
-        'https://github.com/Nadiaessou/project-webgl/tree/master/img/maison.png',
-        'https://github.com/Nadiaessou/project-webgl/tree/master/img/maison2.png',
-        'https://github.com/Nadiaessou/project-webgl/tree/master/img/maison3.png',
+        'https://nadiaessou.github.io/project-webgl/img/maison.png',
+        'https://nadiaessou.github.io/project-webgl/img/maison2.png',
+        'https://nadiaessou.github.io/project-webgl/img/maison3.png',
     ];
 
     var randIndex = THREE.Math.randInt(0, texturesMaison.length - 1);
