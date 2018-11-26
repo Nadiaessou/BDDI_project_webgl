@@ -1,6 +1,6 @@
 
 var media = [
-      "https://github.com/Nadiaessou/project-webgl/tree/master/sound/sound.mp3"
+      "https://nadiaessou.github.io/project-webgl/sound/sound.mp3"
    ],
     fftSize = 1024,
     // [32, 64, 128, 256, 512, 1024, 2048]
