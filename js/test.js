@@ -69,7 +69,7 @@ function loadAudio() {
 
   // call `handleCanplay` when it music can be played
   audio.addEventListener('canplay', handleCanplay);
-  audio.src = "https://nadiaessou.github.io/project-webgl/sound/sound.mp3";
+  audio.src = "../sound/sound.mp3";
   audio.load();
   running = true;
 }
